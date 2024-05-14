@@ -1,0 +1,6 @@
+# testing a bad command
+if asdfg
+then
+echo "it did not work"
+fi
+echo "we are outside of the if statement"
