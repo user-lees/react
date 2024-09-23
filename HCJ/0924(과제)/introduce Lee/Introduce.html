@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나의 소개</title>
+    <style>
+        body { background-color: rgb(176, 244, 244); color: mediumslateblue;
+        margin-left: 40; margin-right: 40;}
+        h1 { text-align: center; color: black; }
+        hr { height: 7px; border: solid grey; 
+        background-color: grey;}
+        span { color:rgb(187, 112, 187); font-size: 15px; }
+    </style>
+    <script>
+        function show() {
+            document.getElementById("fig").src="짱구인사.gif";
+        }
+        function hide() { 
+            document.getElementById("fig").src="";
+        }
+        function fool() {
+            document.getElementById("dinosaur").src="foolish.png";
+        }
+        function foool() {
+            document.getElementById("dinosaur").src="";
+        }
+    </script>
+</head>
+<body>
+    <h1 onmouseover="show()" onmouseout="hide()">이승희</h1>
+    <hr>
+    <div><img id = "fig" src=""></div>
+    저는 경성대학교를 다니며 소프트웨어를 복수전공하는 학생입니다.<br>
+    제가 제일 좋아하는 노래의 장르는 인디이며,
+    그 중 가장 좋아하는 노래는 <br>
+    <span onmouseover="fool()" onmouseout="foool()">
+        &lt;Foolish - VIN&gt;</span>입니다.
+    <div><img id="dinosaur" src=""></div>
+    
+</body>
+</html>
